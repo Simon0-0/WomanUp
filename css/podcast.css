@@ -5,8 +5,52 @@ body {
 
 }
 
+.podcast-info > h3 {
+    font-family: 'Bodoni Moda' , sans-serif;
+    font-size: 24px;
+    color: #CB4154;
+    text-align: center;
+}
+.podcast-info > img {
+    width: 100%;
+}
+.podcast-info > h2{
+    font-family: 'Bodoni Moda', sans-serif;
+  color: #CB4154;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.podcast-info > p {
+    color: #004179;
+    margin: 5px 20px;
+    font-size: 1.1rem;
+}
+.podcast-info > button {
+    border: none;
+    border-bottom: solid #004179 1px;
+    color: #004179;
+    background-color: white;
+    margin: 5px 20px;
+}
+
+.podcast-info > .episode {
+    margin: 20px;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+}
+.podcast-info >  .orange {
+    background-color: rgba(254, 152, 73, 0.2);
+    color: #FE9849;
+}
+.podcast-info > .pink {
+    background-color: rgba(203, 65, 84, 0.2);
+    color: #CB4154;
+}
+
 section {
     position: sticky;
+    top: 0px;
     text-align: center;
     background-color: #fff;
     margin: 0 auto;
@@ -14,7 +58,7 @@ section {
 }
 
 main {
-    padding: 350px 2px;
+    padding: 10px 2px;
 }
 
 #video {
