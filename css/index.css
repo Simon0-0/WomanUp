@@ -1,66 +1,184 @@
-* {
-    margin: 0;
+/*TODO
+-Rolldrop menu
+-Video
+-info
+-sticky socials
+-Gallery ---- LUCIA ----
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,700&family=Outfit:wght@200;400&family=Quicksand&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
 }
-html {
-    font-size: 16px;
-    font-family: Arial;
+
+header>span {
+  position: absolute;
+  right: 45px;
+  padding: 8px;
 }
-header {
-    border-bottom: 1px solid #eee;
-    height: 4rem;
+
+header>img {
+  width: 40px;
+  left: 45px;
+  padding: 15px 8px;
 }
-.burger-wrapper {
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  right: 45px;
+  font-size: 60px;
+}
+
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
   cursor: pointer;
 }
-#meny {
-    background: #333;
-    width: 50rem;
-    height: 100vh;
-    position: fixed;
-    right: 0;
-    transition-timing-function: cubic-bezier(10,2,3,1);
-    transform: translateX(50rem);
-    top: 0;
-    z-index: 0;
-    transition: 0.5s;
-}
-#menyAvPaa {
-    display: none;
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
 }
 
-#menyAvPaa:checked ~ #meny {
-    transform: translateX(0rem);
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-#burger {
-    position: absolute;
-    cursor: pointer;
-    width: 2rem;
-    height: 2rem;
-    right: 1rem;
-    top: 1rem;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
-#burger > div {
-    height: 2px;
-    background-color: #000;
-    transition: 0.5s;
-    z-index: 999;
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-#menyAvPaa:checked ~ #burger > div {
-  background-color: #fff;
+.dropdown a:hover {
+  background-color: #ddd;
 }
 
-#menyAvPaa:checked ~ #burger > div:nth-child(1) {
-    transform: translateY(15px) rotate(45deg);
+.show {
+  display: block;
 }
-#menyAvPaa:checked ~ #burger > div:nth-child(2) {
-    opacity: 0;
+
+.sticky-socials {
+  position: fixed;
+  right: 0.5rem;
+  top: 15%;
+  background-color: rgba(255, 253, 208, 0.6);
+  border-radius: 8px 0 0 8px;
 }
-#menyAvPaa:checked ~ #burger > div:nth-child(3) {
-    transform: translateY(-15px) rotate(-45deg);
+
+.sticky-socials a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: black;
+  font-size: 20px;
+}
+
+.best-info {
+  padding: 10px 30px;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+  color: #004179;
+}
+
+h3 {
+  font-family: 'Bodoni Moda', sans-serif;
+  color: #CB4154;
+  font-size: 1.8rem;
+}
+
+.info-pec {
+  padding: 1rem 2rem;
+}
+
+.info-pec>div .pink {
+  color: #CB4154;
+}
+
+.info-pec>div .orange {
+  color: #FE9849;
+}
+
+.info-pec>div .light-pink {
+  color: #E08D98;
+}
+
+.info-pec p {
+  color: #004179;
+}
+
+.socials>img {
+  width: 40px;
+}
+.reviews div {
+  border: solid #668DAE 1px;
+  border-radius: 10px;
+  margin: 10px 1rem;
+  padding: 3px 6px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
