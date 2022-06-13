@@ -53,3 +53,7 @@ footer>.info h6 {
     font-family: 'Quickdand', sans-serif;
     font-size: 15px;
 }
+footer > h6 {
+    text-align: center;
+    grid-column: 1/3;
+}

@@ -1,8 +1,6 @@
 /*TODO
--Rolldrop menu
+-Rolldrop menu --amma die--
 -Video
--info
--sticky socials
 -Gallery ---- LUCIA ----
 
 */
@@ -158,6 +156,13 @@ h3 {
 
 .info-pec p {
   color: #004179;
+}
+
+.socials > h5 {
+  font-size: 20px;
+  font-family: 'Bodoni Moda', sans-serif;
+  color: #E08D98;
+  text-align: center;
 }
 
 .socials>img {
