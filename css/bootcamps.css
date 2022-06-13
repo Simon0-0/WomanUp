@@ -1,0 +1,46 @@
+.section-a > h3{
+    font-family: 'Bodoni Moda' , sans-serif;
+    font-size: 24px;
+    color: #CB4154;
+    text-align: center;
+}
+.section-a > .img {
+    width: 100%;
+}
+.section-a > .logo  {
+    width: 150px;
+    margin-left: 15px;
+}
+.nextBootcamp > h2 {
+    color: #004179;
+    font-family: 'Bodoni Moda', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+.nextBootcamp > h3 {
+    color: #CB4154;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 0.3rem
+}
+.nextBootcamp > p {
+    color: #668DAE;
+    font-family: 'Bodoni Moda', sans-serif;
+    font-size: 1.3rem;
+    margin: 15px;
+}
+.nextBootcamp > .bootButton {
+    margin: 20px;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+}
+.nextBootcamp > .blue {
+    color: #004179;
+    background-color: #BFCBD5;
+}
+.nextBootcamp > .orange {
+    color: #FE9849;
+    background-color: rgba(254, 152, 73, 0.2);
+}
