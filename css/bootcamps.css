@@ -44,3 +44,51 @@
     color: #FE9849;
     background-color: rgba(254, 152, 73, 0.2);
 }
+.if-if {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 0.4fr 0.5fr 0.5fr 0.5fr 0.5fr;
+}
+.if-if > h4 {
+    grid-column: 1/3;
+    grid-row: 1;
+    color: #CB4154;
+    font-size: 1.7rem;
+    text-align: center;
+}
+.if-if > p {
+    color: #004179;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    margin: 5px 5px;
+}
+.gift {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    grid-template-rows: 3rem 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr;
+    align-items: center;
+}
+h4 {
+    font-family: 'Bodoni Moda';
+    color: #CB4154  ;
+    font-size: 1.5rem;
+    grid-column: 1/3;
+    text-align: center;
+}
+.gift > img {
+    width: 70%;
+}
+.gift > .bag {
+    grid-column: 2;
+    grid-row: 2/8;
+    width: 100%;
+}
+.bootcamp-place > h5 {
+    color: #004179;
+    font-size: 1.3rem;
+    margin: 5px 10px;
+}
+.bootcamp-place > p {
+    color: #004179;
+    margin: 5px 10px;
+}
