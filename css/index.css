@@ -50,7 +50,7 @@ header>img {
   color: #818181;
   display: block;
   transition: 0.3s;
-}
+} 
 
 .overlay a:hover, .overlay a:focus {
   color: #f1f1f1;
@@ -61,11 +61,11 @@ header>img {
   right: 45px;
   font-size: 60px;
 }
-
-
+/*
+ WE ARE NOT USING THIS DROP down MENU
 .dropbtn {
-  background-color: #3498DB;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -104,7 +104,7 @@ header>img {
 
 .show {
   display: block;
-}
+}*/
 
 .sticky-socials {
   position: fixed;
@@ -122,6 +122,26 @@ header>img {
   color: black;
   font-size: 20px;
 }
+.backgroundvideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -5;
+}
+
+.videotittle {
+  color: #FEE9D9;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: left;
+  margin-top: -175px;
+  margin-right: 5px;
+  margin-left: 1px;
+}
 
 .best-info {
   padding: 10px 30px;
@@ -130,6 +150,9 @@ header>img {
 p {
   font-family: 'Quicksand', sans-serif;
   color: #004179;
+}
+.weirdtittle{
+  margin-top: 50px;
 }
 
 h3 {
@@ -167,12 +190,6 @@ h3 {
 
 .socials>img {
   width: 40px;
-}
-.reviews div {
-  border: solid #668DAE 1px;
-  border-radius: 10px;
-  margin: 10px 1rem;
-  padding: 3px 6px;
 }
 
 
