@@ -6,6 +6,7 @@ header>span {
     position: absolute;
     right: 45px;
     padding: 8px;
+    color: #CB4154;
   }
   
   header>img {
@@ -21,8 +22,7 @@ header>span {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #FE9849;
     overflow-x: hidden;
     transition: 0.5s;
   }
@@ -33,15 +33,22 @@ header>span {
     width: 100%;
     text-align: center;
     margin-top: 30px;
+    padding: 5px;
   }
   
   .overlay a {
-    padding: 8px;
+    padding: 4px 12px;
+    margin: 12px 20px;
     text-decoration: none;
     font-size: 36px;
-    color: #818181;
+    color: #ffffff;
     display: block;
     transition: 0.3s;
+    background-color: #FEC191;
+    border-radius: 20px;
+  }
+  .overlay .closebtn {
+    background-color: #FE9849;  
   }
   
   .overlay a:hover, .overlay a:focus {
@@ -120,4 +127,5 @@ footer > h6 {
   p {
     font-family: 'Quicksand', sans-serif;
     color: #004179;
+    padding: 0 1rem;
   }
