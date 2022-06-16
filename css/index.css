@@ -154,30 +154,6 @@ p {
 .weirdtittle{
   margin-top: 50px;
 }
-.image-tea {
-  background-color: rgba(203, 65, 84, 0.2);
-  padding-bottom: 2rem;
-}
-.image-tea > img {
-  border-radius: 100%;
-  width: 80%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.image-tea > .pink {
-  background-color: rgba(203, 65, 84, 0.2);
-  color: #CB4154;
-}
-.image-tea > .episode {
-  margin: 0 100px;
-  justify-content: center;
-  display: grid;
-  text-decoration: none;
-  padding: 8px 20px;
-  border-radius: 8px;
-
-}
 
 h3 {
   font-family: 'Bodoni Moda', sans-serif;
@@ -212,14 +188,8 @@ h3 {
   text-align: center;
 }
 
-.socials> a >img {
-  width: 100%;
-  grid-row: 2;
-}
-.socials {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+.socials>img {
+  width: 40px;
 }
 
 
