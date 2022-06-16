@@ -50,9 +50,10 @@ header>img {
   color: #818181;
   display: block;
   transition: 0.3s;
-} 
+}
 
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover,
+.overlay a:focus {
   color: #f1f1f1;
 }
 
@@ -61,6 +62,7 @@ header>img {
   right: 45px;
   font-size: 60px;
 }
+
 /*
  WE ARE NOT USING THIS DROP down MENU
 .dropbtn {
@@ -122,6 +124,7 @@ header>img {
   color: black;
   font-size: 20px;
 }
+
 .backgroundvideo {
   width: 100vw;
   height: 100vh;
@@ -151,25 +154,30 @@ p {
   font-family: 'Quicksand', sans-serif;
   color: #004179;
 }
-.weirdtittle{
+
+.weirdtittle {
   margin-top: 50px;
 }
+
 .image-tea {
   background-color: rgba(203, 65, 84, 0.2);
   padding-bottom: 2rem;
 }
-.image-tea > img {
+
+.image-tea>img {
   border-radius: 100%;
   width: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.image-tea > .pink {
+
+.image-tea>.pink {
   background-color: rgba(203, 65, 84, 0.2);
   color: #CB4154;
 }
-.image-tea > .episode {
+
+.image-tea>.episode {
   margin: 0 100px;
   justify-content: center;
   display: grid;
@@ -206,7 +214,7 @@ h3 {
   color: #004179;
 }
 
-.socials > h5 {
+.socials>h5 {
   font-size: 20px;
   font-family: 'Bodoni Moda', sans-serif;
   color: #E08D98;
@@ -215,10 +223,11 @@ h3 {
   grid-column: 1/6;
 }
 
-.socials> a >img {
+.socials>a>img {
   width: 100%;
   grid-row: 2;
 }
+
 .socials {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -237,3 +246,57 @@ h3 {
     right: 35px;
   }
 }
+
+/*lucy's experiments */
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+.slide > img {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 7px;
+}
+
+.slide [data-active] {
+  opacity: 1;
+}
+
+.carousel-btn {
+position: absolute;
+z-index: 2;
+background: none;
+border: none;
+font-size: 3.5rem;
+margin-top: 500px;
+margin-left: 50px;
+color: rgba(0, 65, 121,0.6);
+border: pointer;
+cursor: pointer;
+}
+
+.carousel-btn.prev{
+  left: 30vw;
+}
+
+.carousel-btn.next {
+  right: 40vw;
+}
+
